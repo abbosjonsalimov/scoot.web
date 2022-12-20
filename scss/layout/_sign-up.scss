@@ -1,0 +1,119 @@
+.sign-up {
+    padding:10.2rem 0;
+    background-color: $color-dark-navy;
+    position: relative;
+    overflow: hidden;
+    .container {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(tablet) {
+            flex-direction: column;
+            text-align: center;
+        }
+        @include responsive(big-tablet) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    h2 {
+        color:$color-white;
+        width: 100%;
+        max-width: 415px;
+        @include responsive(tablet) {
+            margin-bottom: 4rem;
+        }
+        @include responsive(big-tablet) {
+            margin-bottom: 4rem;
+        }
+        @include responsive(phone) {
+            width: 100%;
+            max-width: 311px;
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            letter-spacing: -1.43px;
+        }
+    }
+    &__btn-wrapper {
+        display: flex;
+        @include responsive(m-phone) {
+            display: flex;
+            flex-direction: column;
+            gap:1rem;
+        }
+        
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        background-color: $color-light-gray;
+        padding: 0.9rem 1.6rem 0.8rem 1rem;
+        border-radius: 4px;
+        @include responsive(phone) {
+            padding:0.8rem 1.16rem 0.64rem;
+        }
+        @include responsive(m-phone) {
+            padding:0.6rem 1.1rem 0.6rem;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__img {
+        width: 24.27px;
+        height: 28px;
+        object-fit: contain;
+        object-position: center;
+        margin-right: 1.2rem;
+        @include responsive(m-phone) {
+            width: 22px;
+            height:26px;
+            object-fit: contain;
+            object-position: center;
+            margin-right: 1rem;
+        }
+    }
+    &__btn:not(:last-child) {
+        margin-right: 1.8rem;
+        @include responsive(tablet){
+            margin-right: 1.2rem;
+        }
+    }
+    span:first-child {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.4;
+        letter-spacing: -0.45px;
+        color:$color-dark-navy;
+    }
+    span {
+        font-family: $title-font;
+        font-weight: 700;
+        font-style: 2rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.89px;
+        color:$color-dark-navy;
+    }
+    &__round {
+        display:inline-block;
+        position: absolute;
+        width: 347px;
+        height: 347px;
+        border-radius:50%;
+        opacity: 0.1;
+        border: 15px solid $color-light-gray;
+        top:50%;
+    }
+    &__round-three {
+        right: -173px;
+        background-color:$color-light-gray;
+    }
+    &__round-two {
+        right: 229px;
+    }
+    &__round-one {
+        right: 625px;
+    }
+}

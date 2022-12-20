@@ -1,0 +1,87 @@
+.home__section {
+    background-image: url("../images/jpg/scooter-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right; 
+    color:$color-white;
+    padding: 15rem 0rem;
+    @include responsive(phone) {
+        background-position:  center right;
+    }
+
+&-text-wrapper {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    position: relative;
+    @include responsive(tablet) {
+        align-items: center;
+    }
+
+    h1 {
+        margin-bottom: 4rem;
+        @include responsive(tablet) {
+            margin-bottom: 2.4rem;
+        }
+        @include responsive (phone) {
+            font-size: 4rem;
+            line-height: 4rem;
+            letter-spacing: -1.79;
+        }
+    }
+
+    &__wrapper {
+        position:relative;
+    }
+    p {
+        margin-bottom: 4rem;
+        width: 100%;
+        max-width: 405px;
+        position: relative;
+        @include responsive(tablet){
+            margin-bottom: 3.2rem;
+        }
+        span {
+            position: absolute;
+            display:inline-block;
+            width: 202px;
+            height: 15px;
+            background-color:$color-yellow;
+            top:50%;
+            left: -70px;
+            transform:translate(-100%);
+        }
+    }
+
+    @include responsive(tablet) {
+        text-align: center;
+        & .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+&-arrow {
+    position: absolute;
+    bottom:10px;
+    right:-40px;
+    transform: translate(100%,0);
+    @include responsive(tablet) {
+        transform: translate(0%, 100%);
+        right: 0px;
+        bottom:39px;
+        left:-240px;
+    
+    }
+    @include responsive(m-phone) {
+        transform: translate(0%, 100%);
+        right: 0px;
+        bottom:34px;
+        left:-330px;
+    }
+}
+}
+

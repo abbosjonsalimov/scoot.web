@@ -1,0 +1,69 @@
+@mixin buttons {
+    border:1px outset $color-yellow;
+    background-color: $color-yellow;
+    padding:1.1rem 3.6rem;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color:$color-white;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+@mixin btn-hover {
+    background-color: transparent;
+    color:$color-yellow;
+}
+
+.header__btn {
+    @include buttons;
+    padding: 1.4rem 3.9rem;
+    position: relative;
+    &:hover {
+        @include btn-hover;
+        transition: all 0.5s ease;
+        left:-50px;
+        animation: 1s all ease;
+    }
+    @include responsive (tablet) {
+        display:none;
+    }
+}
+
+.home__section-btn {
+    @include buttons;
+    padding: 1.4rem 3.9rem;
+    &:hover {
+        @include btn-hover;
+        transition:  all 0.4s ease;
+    }
+}
+
+.burger__btn-img {
+    display:none;
+    background-color:$color-white;
+    &__img {
+        width: 19.69px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        object-fit: contain;
+        object-position: center; 
+    }
+    @include responsive (tablet) {
+        display: block;
+    }
+    @include responsive (phone) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.info__btn {
+    @include buttons;
+    &:hover {
+        @include btn-hover;
+        transition: all 0.5s ease;
+    }
+}

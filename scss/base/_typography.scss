@@ -1,0 +1,45 @@
+body {
+    font-family: $site-font;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color:$color-dark-navy;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+h1 {
+    margin: 0;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    letter-spacing: -2.5px;
+}
+h2 {
+    margin: 0;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -2.14px;
+}
+h3 {
+    margin: 0;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: -1.79px;
+}
+h4 {
+    margin: 0;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: -1.07px;
+}

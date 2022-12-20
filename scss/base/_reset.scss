@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: 1px solid $color-yellow;
+    outline-offset: 2px;
+}
+button {
+    cursor: wait;
+    color:transparent;
+    border:none;
+}
+html {
+    font-size: 62.5%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:$color-white;
+
+}
+.container {
+    width: 100%;
+    max-width: 1150px;
+    padding:0px 2rem;
+    margin:0px auto;
+}
+.site-logo {
+    display: flex;
+    margin-right: 5.8rem;
+    @include responsive(tablet) {
+        margin:0 auto;
+    }
+}

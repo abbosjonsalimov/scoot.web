@@ -1,0 +1,35 @@
+.footer {
+    padding:3.5rem 0 3.24rem;
+    background-color: $color-footer-bgcolor;
+    @include responsive(phone) {
+        padding: 6.4rem 0 8rem;
+    }
+    .container {
+        display:flex;
+        align-items: center;
+        @include responsive(phone) {
+            flex-direction: column;
+        }
+    }
+    &__social-media {
+        display: flex;
+        align-items: center;
+        a {
+            display: flex;
+        }
+        a path {
+            transition: all 0.4s ease;
+        }
+        a:hover path {
+            fill: $color-white;
+        }
+        li:not(:last-child) {
+            margin-right: 2.4rem;
+        }
+    }
+}
+.footer__site-logo {
+    @include responsive(phone) {
+        margin-bottom: 4.1rem;
+    }
+}
